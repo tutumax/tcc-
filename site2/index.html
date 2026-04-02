@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>EducaTec</title>
+
+    <style>
+        .full-screen-section {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes bounce-slow {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .animate-bounce-slow {
+            animation: bounce-slow 2s infinite;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-white z-50 shadow-md transition-all duration-300">
+
+        <div class="w-full px-10 py-3 flex justify-between items-center">
+
+            <h1 class="text-2xl font-black tracking-tighter text-gray-900">
+                Educa<span class="text-blue-500">TEC</span>
+            </h1>
+
+            <div class="flex items-center space-x-10">
+
+                <ul class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em] text-gray-700">
+
+                    <li>
+                        <a href="#home" class="hover:text-blue-500 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre" class="hover:text-blue-500 transition">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contato" class="hover:text-blue-500 transition">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="login/index_logar.html"
+                    class="p-2.5 bg-blue-500 hover:bg-blue-600 rounded-full text-white transition-all shadow-lg">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="w-5 h-5">
+
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0
+                               3.75 3.75 0 017.5 0z
+                               M4.5 20.25a7.5 7.5 0 0115 0" />
+
+                    </svg>
+
+                </a>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- HERO / IMAGEM ÚNICA -->
+    <section class="relative full-screen-section overflow-hidden" id="home">
+
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070" alt="Hero" class="hero-image">
+
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-900/40 to-transparent flex flex-col items-center justify-center text-center px-4">
+
+            <h2 class="text-white text-5xl md:text-8xl font-black tracking-tighter" data-aos="fade-down">
+                CLAREZA
+            </h2>
+
+            <p class="text-blue-100 text-lg md:text-xl mt-4 tracking-widest uppercase font-light">
+                Onde a tecnologia encontra o design
+            </p>
+
+        </div>
+
+        <!-- SCROLL INDICATOR -->
+        <div
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white flex flex-col items-center animate-bounce-slow">
+
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] mb-2">
+                Scroll
+            </span>
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6">
+
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+
+            </svg>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-32 px-10 bg-white">
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+            <div data-aos="fade-right">
+
+                <h3 class="text-blue-500 font-bold uppercase text-sm tracking-widest mb-4">
+                    A Experiência
+                </h3>
+
+                <h2 class="text-5xl font-black text-gray-900 leading-none mb-8">
+                    Minimalismo<br>em Azul.
+                </h2>
+
+                <p class="text-gray-500 text-lg">
+                    Nosso site utiliza toda a largura da sua tela para garantir que nada limite sua visão.
+                    O branco traz o respiro, e o azul traz a inovação.
+                </p>
+
+            </div>
+
+            <div
+                class="bg-blue-50 h-80 rounded-[3rem] shadow-inner flex items-center justify-center p-10"
+                data-aos="zoom-in">
+
+                <p class="text-blue-400 font-medium text-center text-xl italic">
+                    "Simplicidade é o último grau de sofisticação."
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-32 bg-blue-50/50">
+
+        <div class="max-w-3xl mx-auto px-6 text-center" data-aos="fade-up">
+
+            <h2 class="text-4xl font-black text-gray-900 mb-12">
+                Entre em contato
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <input type="text"
+                    placeholder="Nome"
+                    class="w-full p-5 rounded-3xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+
+                <input type="email"
+                    placeholder="E-mail"
+                    class="w-full p-5 rounded-3xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none">
+
+                <textarea rows="4"
+                    placeholder="Sua mensagem"
+                    class="w-full p-5 rounded-3xl shadow-sm focus:ring-2 focus:ring-blue-400 outline-none md:col-span-2"></textarea>
+
+                <button
+                    class="md:col-span-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-5 rounded-3xl shadow-xl transition-all hover:scale-105">
+                    Enviar Agora
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-center text-gray-400 text-[10px] font-bold uppercase tracking-widest">
+        © 2026  EducaTEC 
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1000
+        });
+
+        window.onscroll = function () {
+
+            const nav = document.querySelector("nav");
+
+            if (window.scrollY > 50) {
+
+                nav.classList.add("shadow-xl");
+
+            } else {
+
+                nav.classList.remove("shadow-xl");
+
+            }
+
+        };
+
+    </script>
+
+</body>
+
+</html>
