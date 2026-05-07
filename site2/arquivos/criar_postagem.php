@@ -284,7 +284,7 @@ $materias_disponiveis = [
                     <div id="secaoArquivo" class="hidden">
                         <label class="block text-gray-700 font-semibold mb-4">Arquivo <span class="text-red-500">*</span></label>
                         <div id="dropZone" class="border-2 border-dashed border-blue-300 rounded-2xl p-8 text-center cursor-pointer hover:bg-blue-50 hover:border-blue-400 transition">
-                            <input type="file" name="arquivo" id="inputArquivo" class="hidden">
+                            <input type="file" accept="image/jpeg, image/jpg, image/png, application/pdf" name="arquivo" id="inputArquivo" class="hidden">
                             <p class="font-semibold text-gray-700 mb-2">Arraste ou clique</p>
                             <p class="text-sm text-gray-500">PDF, DOC, ZIP, Imagens (Máx: 50MB)</p>
                         </div>

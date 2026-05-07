@@ -24,7 +24,7 @@ try {
     // Se situacao = 2, já foi confirmado
     if ($link_db['situacao'] == 2) {
         echo "<h1>Atenção: Este link já foi utilizado.</h1>";
-        echo "<p>Sua conta já foi confirmada. Acesse seu perfil ou <a href='login.php'>faça login</a>.</p>";
+        echo "<p>Sua conta já foi confirmada. Acesse seu perfil ou <a href='../login/login.php'>faça login</a>.</p>";
         exit;
     }
 
@@ -70,7 +70,7 @@ try {
             <div class="max-w-xl w-full bg-white rounded-3xl shadow-xl p-8 text-center" data-aos="zoom-in">
                 <h1 class="text-2xl font-black text-green-600 mb-2">E-mail confirmado com sucesso!</h1>
                 <p class="text-gray-600 mb-6">Sua conta foi ativada. Agora você pode fazer login.</p>
-                <a href="login.php" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-3xl shadow hover:bg-blue-600">Ir para o Login</a>
+                <a href="../login/login.php" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-3xl shadow hover:bg-blue-600">Ir para o Login</a>
             </div>
         </div>
 

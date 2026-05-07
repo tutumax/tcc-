@@ -26,7 +26,7 @@ $token = gerar_csrf_token();
     <div class="min-h-screen flex items-center justify-center px-6 py-10 mt-20">
         <div class="max-w-md w-full bg-white rounded-3xl shadow-xl p-8" data-aos="fade-up">
             <h2 class="text-2xl font-black text-gray-900 mb-2">Acesse sua Conta</h2>
-            <p class="text-gray-500 mb-6">Entre para gerenciar seu conteúdo e contribuir com a comunidade.</p>
+            <p class="text-gray-500 mb-6">Entre para aprender e ensinar: alunos evoluem e professores inspiram.</p>
             
             <form action="logar.php" method="POST" class="grid gap-4">
                 <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($token, ENT_QUOTES, 'UTF-8'); ?>">

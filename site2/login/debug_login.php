@@ -120,7 +120,7 @@ $body = ob_get_clean();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Debug Login — EduShare</title>
+    <title>Debug Login — EducaTEC</title>
 </head>
 <body class="bg-white text-gray-800 p-6">
     <?php include __DIR__ . '/nav.php'; ?>

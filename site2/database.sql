@@ -1,4 +1,3 @@
-
 SET FOREIGN_KEY_CHECKS = 0;
 
 CREATE DATABASE IF NOT EXISTS db_tcc;
@@ -23,6 +22,14 @@ CREATE TABLE IF NOT EXISTS usuarios (
     INDEX idx_role (role),
     INDEX idx_aprovado (aprovado)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Adicionar constraint único apenas se não existir
+ALTER TABLE usuarios ADD CONSTRAINT unique_telefone_role 
+UNIQUE (telefone, role);
+
+-- OU se a tabela já tem dados e quer fazer backup:
+-- ALTER TABLE usuarios DROP INDEX IF EXISTS unique_telefone_role;
+-- ALTER TABLE usuarios ADD UNIQUE INDEX unique_telefone_role (telefone, role);
 
 -- =====================================================
 -- Tabela: LINKS_EMAILS

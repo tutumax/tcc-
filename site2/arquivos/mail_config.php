@@ -8,7 +8,7 @@ return [
 	'password' => 'emot orfd gjqx lvwt', // App password ou senha de aplicação
 	'secure' => 'tls', // 'ssl' ou 'tls'
 	'from_email' => 'verificacaotcc2026@gmail.com',
-	'from_name' => 'Verficalçao de Email',
+	'from_name' => 'Verficação de Email',
 ];
 
 ?>

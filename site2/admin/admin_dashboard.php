@@ -5,7 +5,7 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true) {
     exit;
 }
 
-require_once 'conexao.php';
+require_once '../arquivos/conexao.php';
 
 // Tratar ações (aprovar professor)
 if (isset($_GET['action']) && $_GET['action'] === 'approve' && isset($_GET['id'])) {
@@ -53,14 +53,13 @@ try {
     <title>Dashboard Admin — EduShare</title>
 </head>
 <body class="bg-white text-gray-800">
-    <?php include __DIR__ . '/nav.php'; ?>
     <main class="max-w-4xl mx-auto p-8 mt-20">
         <div class="bg-blue-50 rounded-3xl p-8 shadow-inner">
             <h2 class="text-2xl font-black text-gray-900">Bem-vindo, <?php echo htmlspecialchars($_SESSION['admin_user'], ENT_QUOTES, 'UTF-8'); ?>!</h2>
             <p class="text-gray-600 mt-4">Esta área é restrita apenas ao administrador.</p>
 
             <div class="mt-6 space-y-3">
-                <a class="inline-block bg-white border border-blue-500 text-blue-500 px-4 py-2 rounded-2xl" href="dashboard.php">Ver Dashboard do Usuário</a>
+                <a class="inline-block bg-white border border-blue-500 text-blue-500 px-4 py-2 rounded-2xl" href="../arquivos/dashboard.php">Ver Dashboard do Usuário</a>
                 <a class="inline-block bg-red-500 text-white px-4 py-2 rounded-2xl" href="admin_logout.php">Encerrar Sessão Admin</a>
             </div>
 
